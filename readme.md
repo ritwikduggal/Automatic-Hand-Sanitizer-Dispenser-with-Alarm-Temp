@@ -1,5 +1,7 @@
 # Automatic & Touch-free Hand Santizer Dispenser  machine""''&copy;&trade;&reg;*
 
+Protoype ![ciruit]("Hand Sanitizer Dispenser Newspaper.jpg")
+
 ## Field of the Invention 
 
 This is an era of villainous COVID19. Avoiding physical contact is the most trusted weapon against it. So, we have tried to develop an **Automatic & Touch-free Hand Sanitiser Dispenser machine**.  Our innovation aims towards affordable healthcare products, without having any compromises on the build, as well as design.  
@@ -22,7 +24,7 @@ With the success of the prototype, we pushed the limit of 8*our goal to industri
 
 The Online *Easy EDA* tool is used for design purposes. In our innovative and economic design, we have used ATmega328p PU microcontroller, L293D motor driver, Ultrasonic sensor, 5V submersible motor, FTDI- USB to TTL driver, 16Mz oscillator and few capacitors for the safety of the circuit for smooth working in an unsimulated environment. In addition to these, we have designed a 3D model for the container almost similar to the prototype model.
 
-Protoype ![ciruit](images\real.png)
+Protoype ![ciruit](./images/real.png)
 
 ## Prior Art details(Novelty)
 
@@ -84,9 +86,9 @@ Affordable · Reliable · Customizable · Energy-Efficient · Noise-Free product
 
 This can be a great initiative under the **MAKE in INDIA** movement, strongly led by our *Honorable Prime Minister Shri Damadordas Narendra Modi*.
 
-Feature of a current model in the market with less than 3L capacity ![spec1](images\1.png)
+Feature of a current model in the market with less than 3L capacity ![spec1](./images/1.png)
 
-Feature of a current model in the market with more than 3L capacity ![spec1](images\2.png)
+Feature of a current model in the market with more than 3L capacity ![spec1](./images/2.png)
 
 ## Objects of Invention 
 
@@ -208,7 +210,7 @@ We have completed our project in four Step:
 
 At the beginning of our process, we tried our knowledge gained in the theory of computation class. An automaton is designed to provide solid proof to an idea. Our idea was to create a machine that can *receive a high signal when an obstruction is detected and calculate the distance*. Then *compare it with threshold* and provides high signal to the driver when it is less. We have used open Sourced JFLAP software.
 
-Finite automata of machine ![macine](images\automata.png)
+Finite automata of machine ![macine](./images/automata.png)
 
 ## 2. Datapath Design
 
@@ -217,7 +219,7 @@ Then comes the CPU design part. We have explicitly used open-sourced LOGISIM sof
 We have designed a **21-bit width instruction register** stored in ROM which commands the *8bit*  RAM data to compute according to the control provided by the control unit and provide the signal to the motor.
 
 Datapath map
-![datapath](images\datapath.png)
+![datapath](./images/datapath.png)
 
 ##### Control Unit 
 
@@ -228,7 +230,7 @@ We have used a 21-bit width splitter for the Control unit since our instruction 
 ##### ALU
 An arithmetic logic unit (ALU) is a digital circuit used to perform arithmetic and logic operations. It represents the fundamental building block of the central processing unit (CPU) of a computer. In our, design ALU perform basic operation like multiplication, addition, XOR, OR, and comparison of two 8 bit binary number. after computing, it provides the high signal accordingly.
 
-ALU ![alu](images\alu.png)
+ALU ![alu](./images/alu.png)
 
 Algorithm for our ALU computation
 ``` Algorithm
@@ -242,7 +244,7 @@ Algorithm for our ALU computation
 4604    comp a, b   000000100011000000000
 reutrn 
 ```
-Register ![register](images\registerwrite.png)
+Register ![register](./images/registerwrite.png)
 ## 3. Prototype
 
 #### WORKING
@@ -300,14 +302,14 @@ void loop()
 For the initial testing of the proposed model, we have used the Arduino IDE simulator and import .obj file from Tinkercad software. Then we load the above program. After several bugs finding and debugging, finally, our simulator works according to our visualization.
 
 Simulation
-![](images\Simulation.png)
+![](./images/Simulation.png)
 
 #### Prototype
 Successful implementation paves the way for prototype testing. After collecting the required component with assembled them and connect it properly using jump wire. Then we upload the program in the bootloader connecting its USB port with our computer. There is a point to be noted that the C program is converted into a .hex file that is written in assembly language. Arm GCC compiler converts the C program in assembly code. For the container, we used a common container that can be easily found anywhere. 
 It was a eureka moment when the first drop of liquid pumped out from the tiny nozzle.
 
 Protoype
-![](images\real2.jpg)
+![](./images/real2.jpg)
 
 
 ##  4. Circuit Diagram
@@ -387,7 +389,7 @@ For demonstrating a clean representation of our circuit and maintaining the tran
 
 We have efficiently designed the schematic diagram of the circuit used in our design.
 
-Schematic Diagram ![](images\sch.png)
+Schematic Diagram ![](./images/sch.png)
 
 #### PCB Design
 
@@ -395,11 +397,11 @@ We have used a doubled layered PCB board. In this sort of PCB, a thin layer of d
 
 PCB 3D rendered 
 
-![](images/pcb2.jpeg)
+![](./images/pcb2.jpeg)
 
 PCB 2D rendered
 
-  ![](images\pcb1.png)
+  ![](./images/pcb1.png)
 ```
 U1: ATmega328p PU
 U2: L293D driver
@@ -417,5 +419,5 @@ Q1 : register
 
 A 3D model is also designed with the help of Tinkercad. In our design we have provide a space for motor in bottom portion like a well structure to obstruct the self flow of liquid due to gravity.
 
- Motor ![](images\view1.png)
+ Motor ![](./images/view1.png)
 
