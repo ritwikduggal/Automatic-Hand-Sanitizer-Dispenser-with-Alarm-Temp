@@ -1,6 +1,8 @@
 # Automatic & Touch-free Hand Santizer Dispenser  machine""''&copy;&trade;&reg;*
 
-Protoype ![ciruit]("Hand Sanitizer Dispenser Newspaper.jpg")
+Local authority recognition 
+
+![ciruit](./images/newspaper.jpg)
 
 ## Field of the Invention 
 
